@@ -7,6 +7,133 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
 h1, h2 { color:#111; }
 a:hover { text-decoration: underline; }
 </style>
+<style>
+:root {
+  --primary:#111827;
+  --secondary:#2563eb;
+  --light:#f9fafb;
+  --gray:#6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--light);
+  color: var(--primary);
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+nav {
+  background: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg,#111827,#1f2933);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #d1d5db;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin: 16px 8px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+/* SECTION */
+.section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card h3 {
+  margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 { font-size: 30px; }
+}
+</style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
