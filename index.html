@@ -2,358 +2,272 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <style>
-body { font-family: Arial, sans-serif; line-height: 1.6; }
-h1, h2 { color:#111; }
-a:hover { text-decoration: underline; }
-</style>
-<style>
-:root {
-  --primary:#111827;
-  --secondary:#2563eb;
-  --light:#f9fafb;
-  --gray:#6b7280;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  background: var(--light);
-  color: var(--primary);
-  line-height: 1.7;
-}
-
-/* =========================
-   NAVIGATION – DESKTOP
-========================= */
-
-.main-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #ffffff;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: #111827;
-}
-
-/* Desktop menu */
-.nav-links {
-  display: flex;
-}
-
-.nav-links a {
-  margin-left: 18px;
-  text-decoration: none;
-  color: #111827;
-  font-weight: 500;
-}
-
-/* Hide hamburger on desktop */
-.hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-/* =========================
-   NAVIGATION – MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-  /* Show hamburger only on mobile */
-  .hamburger {
-    display: block;
-  }
-
-  /* Hide desktop menu */
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-  }
-
-  .nav-links a {
-    padding: 16px;
-    margin: 0;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  /* Open menu */
-  .nav-links.show {
-    display: flex;
-  }
-}
-
-/* HERO */
-.hero {
-  padding: 80px 20px;
-  text-align: center;
-  background: linear-gradient(135deg,#111827,#1f2933);
-  color: white;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #d1d5db;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* BUTTONS */
-.btn {
-  display: inline-block;
-  margin: 16px 8px;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn-primary {
-  background: var(--secondary);
-  color: white;
-}
-
-.btn-outline {
-  border: 2px solid white;
-  color: white;
-}
-
-/* SECTION */
-.section {
-  padding: 70px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* SERVICES */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-  gap: 24px;
-}
-
-.service-card {
-  background: white;
-  padding: 28px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
-}
-
-.service-card:hover {
-  transform: translateY(-6px);
-}
-
-.service-card h3 {
-  margin-top: 0;
-}
-/* FIX LINK VISIBILITY */
-a {
-  color: var(--secondary);
-}
-
-a:hover {
-  opacity: 0.85;
-}
-
-footer {
-  background: #111827;
-  color: #e5e7eb;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-footer p {
-  margin: 8px 0;
-}
-
-
-/* MOBILE */
-@media(max-width:768px){
-  .hero h1 { font-size: 30px; }
-}
-</style>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- STEP 2.2: SEO META TAGS -->
   <title>Decorous | Construction & Interior Design Company in Bhubaneswar</title>
 
-  <meta name="description" content="Decorous is a professional civil construction and interior design company in Bhubaneswar, Odisha. Call 7008863329 for house construction and interiors." />
-
-  <meta name="keywords" content="construction company in bhubaneswar, interior designer bhubaneswar, house construction odisha" />
+  <meta name="description" content="Decorous is a professional construction and interior design company in Bhubaneswar offering house construction, civil construction, renovation and interior services." />
 
   <link rel="canonical" href="https://decorous.in/" />
 
-  <!-- STEP 2.3: LOCAL BUSINESS SCHEMA -->
+  <!-- SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ConstructionCompany",
     "name": "Decorous",
     "url": "https://decorous.in",
-    "telephone": "7008863329",
+    "telephone": "+91-7008863329",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Bhubaneswar",
       "addressRegion": "Odisha",
       "addressCountry": "IN"
-    },
-    "areaServed": [
-      "Bhubaneswar",
-      "Cuttack",
-      "Khordha",
-      "Puri"
-    ]
+    }
   }
   </script>
 
+  <style>
+    :root {
+      --primary:#111827;
+      --secondary:#2563eb;
+      --light:#f9fafb;
+      --gray:#6b7280;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--light);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    /* ================= NAVIGATION ================= */
+
+    .main-nav {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      background: #ffffff;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* ================= MOBILE NAV ================= */
+
+    @media (max-width: 768px) {
+      .hamburger { display: block; }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+      }
+
+      .nav-links a {
+        padding: 16px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      background: linear-gradient(135deg,#111827,#1f2937);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      color: #d1d5db;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 16px 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background: var(--secondary);
+      color: white;
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    /* ================= SECTIONS ================= */
+
+    .section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact-box {
+      background: white;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #111827;
+      color: #e5e7eb;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer p { margin: 6px 0; }
+
+  </style>
 </head>
 
-<body style="font-family:Arial, sans-serif;margin:0">
+<body>
 
-  <header style="padding:20px;border-bottom:1px solid #ddd">
-    <h1>Decorous</h1>
-    <p>Construction & Interior Design Company in Bhubaneswar</p>
-    <a href="tel:7008863329">📞 Call 7008863329</a>
-  </header<a href="tel:7008863329" style="
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 20px;
-  background:#111;
-  color:#fff;
-  text-decoration:none;
-  border-radius:5px;
-  font-weight:bold;
-">
-  📞 Call Now – 7008863329
-</a>
->
-
-  <main style="padding:40px">
-    
-
-  </main<section class="section">
-  <h2 style="text-align:center;">Our Services</h2>
-
-  <div class="services">
-    <div class="service-card">
-      <h3>House Construction</h3>
-      <p>Complete residential and turnkey house construction in Bhubaneswar.</p>
-      <a href="/house-construction-bhubaneswar.html">Learn more →</a>
+  <!-- NAV -->
+  <nav class="main-nav">
+    <div class="logo">Decorous</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/house-construction-bhubaneswar.html">Construction</a>
+      <a href="/interior-design-bhubaneswar.html">Interior</a>
+      <a href="/civil-construction-bhubaneswar.html">Civil</a>
+      <a href="/home-renovation-bhubaneswar.html">Renovation</a>
     </div>
+  </nav>
 
-    <div class="service-card">
-      <h3>Interior Design</h3>
-      <p>Modern and functional interior design for homes and offices.</p>
-      <a href="/interior-design-bhubaneswar.html">Learn more →</a>
-    </div>
-
-    <div class="service-card">
-      <h3>Civil Construction</h3>
-      <p>RCC, brickwork, and structural civil construction services.</p>
-      <a href="/civil-construction-bhubaneswar.html">Learn more →</a>
-    </div>
-
-    <div class="service-card">
-      <h3>Renovation</h3>
-      <p>Home renovation and remodeling services with quality finish.</p>
-      <a href="/home-renovation-bhubaneswar.html">Learn more →</a>
-    </div>
-  </div>
-</section>
->
-
-  <footer style="padding:20px;text-align:center;border-top:1px solid #ddd">
-    © 2026 Decorous. All rights reserved.
-  </footer>
-  <main style="padding:40px">
-    ...
-  </main>
-
-  <!-- START LOCAL SEO FOOTER -->
-<footer>
-  <p><strong>Decorous</strong></p>
-  <p>Construction & Interior Design Company in Bhubaneswar</p>
-  <p>📞 7008863329</p>
-  <p>Serving Bhubaneswar, Cuttack, Khordha & Puri</p>
-</footer>
-
-  <!-- END LOCAL SEO FOOTER -->
-
-</body>
-
-<nav class="main-nav">
-  <strong class="logo">Decorous</strong>
-
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-  <div class="nav-links" id="navLinks">
-    <a href="/">Home</a>
-    <a href="/house-construction-bhubaneswar.html">House Construction</a>
-    <a href="/interior-design-bhubaneswar.html">Interior Design</a>
-    <a href="/civil-construction-bhubaneswar.html">Civil Construction</a>
-    <a href="/home-renovation-bhubaneswar.html">Renovation</a>
-    <a href="/contact.html">Contact</a>
-  </div>
-</nav>
-
+  <!-- HERO -->
   <section class="hero">
-  <h1>Construction & Interior Design Company in Bhubaneswar</h1>
-  <p>
-    Decorous delivers high-quality house construction, interior design,
-    and civil construction services across Bhubaneswar, Cuttack, Khordha, and Puri.
-  </p>
+    <h1>Construction & Interior Design Company in Bhubaneswar</h1>
+    <p>
+      Decorous delivers high-quality house construction, interior design,
+      civil construction and renovation services across Bhubaneswar, Odisha.
+    </p>
 
-  <a href="tel:7008863329" class="btn btn-primary">📞 Call Now</a>
-  <a href="https://wa.me/917008863329" class="btn btn-outline">💬 WhatsApp</a>
-</section>
+    <a href="tel:7008863329" class="btn btn-primary">Call Now</a>
+    <a href="https://wa.me/917008863329" class="btn btn-outline">WhatsApp</a>
+  </section>
 
+  <!-- SERVICES -->
+  <section class="section">
+    <h2 style="text-align:center;">Our Services</h2>
 
-</html>
-<a href="https://wa.me/917008863329" target="_blank" style="
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:12px 18px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-">
-  💬 WhatsApp
-</a>
-<script>
-function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("show");
-}
-</script>
+    <div class="services">
+      <div class="service-card">
+        <h3>House Construction</h3>
+        <p>Complete residential and turnkey house construction services.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Interior Design</h3>
+        <p>Modern, functional interiors for homes and commercial spaces.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Civil Construction</h3>
+        <p>RCC, brickwork and structural civil construction services.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Renovation</h3>
+        <p>Home renovation and remodeling with quality finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> <a href="tel:7008863329">7008863329</a></p>
+      <p><strong>Location:</strong> Bhubaneswar, Odisha</p>
+      <p>Serving Bhubaneswar, Cuttack, Khordha & Puri</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Decorous</strong></p>
+    <p>Construction & Interior Design Company in Bhubaneswar</p>
+    <p>📞 7008863329</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
 
 </body>
 </html>
