@@ -27,8 +27,8 @@ body {
   line-height: 1.7;
 }
 
-/* NAVBAR */
-nav {
+/* NAVBAR – MAIN ONLY */
+.main-nav {
   background: white;
   padding: 16px 24px;
   display: flex;
@@ -40,16 +40,17 @@ nav {
   z-index: 100;
 }
 
-nav a {
+.main-nav a {
   margin-left: 18px;
   text-decoration: none;
   color: var(--primary);
   font-weight: 500;
 }
 
-nav a:hover {
+.main-nav a:hover {
   color: var(--secondary);
 }
+
 
 /* HERO */
 .hero {
@@ -120,14 +121,26 @@ nav a:hover {
 .service-card h3 {
   margin-top: 0;
 }
+/* FIX LINK VISIBILITY */
+a {
+  color: var(--secondary);
+}
 
-/* FOOTER */
+a:hover {
+  opacity: 0.85;
+}
+
 footer {
   background: #111827;
-  color: #d1d5db;
+  color: #e5e7eb;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
+
+footer p {
+  margin: 8px 0;
+}
+
 
 /* MOBILE */
 @media(max-width:768px){
