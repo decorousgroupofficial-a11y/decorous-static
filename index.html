@@ -50,6 +50,40 @@ body {
 .main-nav a:hover {
   color: var(--secondary);
 }
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav-links a {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    margin: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
 
 
 /* HERO */
