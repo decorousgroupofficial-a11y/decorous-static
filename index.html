@@ -50,14 +50,19 @@ body {
 .main-nav a:hover {
   color: var(--secondary);
 }
-/* HAMBURGER */
+/* FIX NAV POSITION */
+.main-nav {
+  position: relative;
+}
+
+/* HAMBURGER ICON */
 .hamburger {
   display: none;
   font-size: 26px;
   cursor: pointer;
 }
 
-/* MOBILE NAV */
+/* MOBILE NAV MENU */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -65,25 +70,27 @@ body {
 
   .nav-links {
     display: none;
-    flex-direction: column;
-    width: 100%;
-    background: white;
     position: absolute;
-    top: 70px;
+    top: 100%;
     left: 0;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    z-index: 999;
   }
 
   .nav-links a {
-    padding: 14px;
-    border-bottom: 1px solid #e5e7eb;
+    padding: 16px;
     margin: 0;
+    border-bottom: 1px solid #e5e7eb;
   }
 
   .nav-links.show {
     display: flex;
   }
 }
+
 
 
 /* HERO */
@@ -294,19 +301,18 @@ footer p {
 <nav class="main-nav">
   <strong class="logo">Decorous</strong>
 
-  <!-- Hamburger -->
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-  <!-- Links -->
   <div class="nav-links" id="navLinks">
     <a href="/">Home</a>
-    <a href="/house-construction-bhubaneswar.html">Construction</a>
-    <a href="/interior-design-bhubaneswar.html">Interior</a>
-    <a href="/civil-construction-bhubaneswar.html">Civil</a>
+    <a href="/house-construction-bhubaneswar.html">House Construction</a>
+    <a href="/interior-design-bhubaneswar.html">Interior Design</a>
+    <a href="/civil-construction-bhubaneswar.html">Civil Construction</a>
     <a href="/home-renovation-bhubaneswar.html">Renovation</a>
     <a href="/contact.html">Contact</a>
   </div>
 </nav>
+
 
 
   <section class="hero">
